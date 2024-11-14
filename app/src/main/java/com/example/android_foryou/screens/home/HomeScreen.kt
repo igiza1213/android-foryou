@@ -153,7 +153,7 @@ fun BottomCard() {
                         )
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Image(
-                                painter = painterResource(id = R.drawable.heart),
+                                painter = painterResource(id = R.drawable.white_heart),
                                 contentDescription = "heart",
                                 modifier = Modifier
                                     .width(14.dp)
@@ -163,7 +163,7 @@ fun BottomCard() {
                             Spacer(Modifier.width(5.dp))
 
                             Text(
-                                text = (hotModel.good / 1000.0).toString() + "K",
+                                text = hotModel.good + "K",
                                 fontWeight = FontWeight.Normal,
                                 color = Color(0xFFFFFFFF),
                                 fontSize = 12.sp
@@ -223,7 +223,7 @@ fun ListCard(listModel: ListModel) {
 
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
-                    painter = painterResource(id = R.drawable.heartpink),
+                    painter = painterResource(id = R.drawable.pink_heart),
                     contentDescription = "heart",
                     modifier = Modifier
                         .width(14.dp)
